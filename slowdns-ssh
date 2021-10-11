@@ -211,13 +211,7 @@ echo "[ 1 ] | Generate on installation"
 echo "[ 2 ] | Use the default key"
 echo "[ x ] | Abort installation"
 echo ""
-opc_key='1'
-case $opc_key in
-1) opc_key1 ;;
-2) opc_key2 ;;
-x) opc_keyx ;;
-*) "unknown command" ; echo ; key_gen;;
-esac
+opc_key1
 }
 opc_key1 () {
 echo "Generating your key..."
